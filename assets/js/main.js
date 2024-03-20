@@ -6,6 +6,26 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+
+function mailTo(){
+  var subject= document.getElementById("subject").value;
+  var message= document.getElementById("message").value;
+  var mailtoLink = "mailto:camilasmyhre@gmail.com" +
+  "?subject=" + encodeURIComponent(subject) +
+  "&body=" + encodeURIComponent(message);
+
+  window.location.href = mailtoLink;
+  
+  name.value = "";
+  subject.value = "";
+  email.value = "";
+  message.value = "";
+
+}
+
+
+
 (function() {
   "use strict";
 
@@ -261,3 +281,4 @@
   new PureCounter();
 
 })()
+
